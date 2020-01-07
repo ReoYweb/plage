@@ -1,0 +1,70 @@
+.hero {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  &__left {
+    position: relative;
+    &__logo {
+      width: 40%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    &__text {
+      position: absolute;
+      top: 30%;
+      left: 3%;
+      writing-mode: vertical-rl;
+      color: $color-darkgray;
+      font-size: 0.7rem;
+      letter-spacing: 0.1rem;
+      // font-family: 'Caveat', cursive;
+    }
+    &__news {
+      position: absolute;
+      bottom: 10%;
+      left: 30%;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      dl {
+        border-bottom: 1px solid $color-darkgray;
+        align-self: flex-end;
+        dt {
+          font-size: 1.1rem;
+          margin-right: 1.6rem;
+          margin-bottom: 0.8rem;
+        }
+      }
+      .textarea {
+        h2 {
+          font-size: 3.5rem;
+          font-weight: bold;
+        }
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background-color: $color-orange;
+          color: #fff;
+          text-align: center;
+          line-height: 70px;
+          margin-bottom: 6px;
+          position: absolute;
+          top: -5px;
+          left: -25px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  &__right {
+    img {
+      width: 100%;
+    }
+  }
+}

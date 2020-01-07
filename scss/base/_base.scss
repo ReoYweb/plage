@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Noto+Sans+JP&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-black;
+  font-family: 'Noto Sans JP', sans-serif;
+  // font-family: 'Caveat', cursive;
+  background-color: $color-white;
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,75 @@
+.header {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 10% 60% 15% 15%;
+  align-items: center;
+  z-index: 99999;
+  &__logo {
+    padding: 0 0 1rem 3rem;
+    margin-top: 1.6rem;
+    float: left;
+    img {
+      width: 100%;
+      max-width: 100px;
+    }
+  }
+  .tel {
+    i {
+      font-size: 2.2rem;
+      span {
+        font-size: 2.5rem;
+        margin: 0 0 0 1rem;
+        display: inline-block;
+        font-family: 'Noto Sans JP', sans-serif;
+        vertical-align: bottom;
+      }
+    }
+    p {
+      font-size: 1rem;
+      font-weight: bold;
+      padding-left: 3rem;
+    }
+  }
+  .reservation {
+    background-color: $color-pink;
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    &:hover {
+      opacity: 0.8;
+    }
+    a {
+      font-size: 2rem;
+      color: $color-white;
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-decoration: none;
+      position: relative;
+      p {
+        font-size: 2.2rem;
+        display: block;
+        width: 100%;
+        // display: flex;
+        // justify-content: center;
+        // align-self: center;
+        position: absolute;
+        top: 18%;
+        left: 25%;
+      }
+      span {
+        font-size: 1rem;
+        position: absolute;
+        top: 60%;
+        left: 32%;
+      }
+    }
+  }
+}
+
+.header_bg {
+  background-color: $color-white;
+  transition: 0.7s all;
+}

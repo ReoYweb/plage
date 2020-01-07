@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="63px" viewBox="0 0 112 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Plage-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-35.000000, -20.000000)">
+            <g id="header" transform="translate(0.000000, -33.000000)">
+                <g id="logo" transform="translate(33.000000, 44.000000)">
+                    <g id="Group">
+                        <text id="Plage" font-family="Futura-Medium, Futura" font-size="40.5" font-weight="400" letter-spacing="2.81249989" fill="#1A1A1A">
+                            <tspan x="0" y="42.3785714">Plage</tspan>
+                        </text>
+                        <text id="Nail-Salon" font-family="Futura-Medium, Futura" font-size="9.45" font-weight="400" letter-spacing="3.0375" fill="#1A1A1A">
+                            <tspan x="13.7846154" y="68.2803571">Beauty Salon</tspan>
+                        </text>
+                        <path d="M2.72307692,51.3482143 L59.2269231,51.3482143" id="Path-3" stroke="#000000" stroke-width="1.35"></path>
+                        <path d="M95.9884615,51.3482143 L113.688462,51.3482143" id="Path-4" stroke="#000000" stroke-width="1.35"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

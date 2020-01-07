@@ -1,0 +1,33 @@
+.grovalnav {
+  ul {
+    display: flex;
+    flex-flow: row;
+    padding: 0 0 0 4rem;
+    li {
+      font-size: 1.4rem;
+      margin: 0 2.5rem;
+      letter-spacing: 0.3rem;
+      a {
+        text-decoration: none;
+        color: $color-black;
+        position: relative;
+        &:hover {
+          color: $color-pink;
+        }
+        &:after {
+          content: '';
+          width: 0%;
+          height: 2px;
+          background-color: $color-pink;
+          display: block;
+          position: absolute;
+          bottom: -5px;
+          transition: 0.3s all;
+        }
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
