@@ -7,14 +7,17 @@
     top: 30%;
     left: 0;
     @include sp {
-      width: 100%;
+      width: 60%;
+      top: 50%;
     }
   }
   &__pic02 {
     width: 33%;
     margin-left: 12%;
     @include sp {
-      width: 100%;
+      width: 60%;
+      margin-left: 40%;
+      margin-top: 40%;
     }
   }
   // &__pic03 {
@@ -39,6 +42,10 @@
     top: 4%;
     right: 0;
     width: 40%;
+    @include sp {
+      width: 100%;
+      top: -40%;
+    }
     &__des {
       font-size: 1.3rem;
       margin: 24px 0 0 0;
@@ -61,12 +68,20 @@
       width: 180px;
       height: 1px;
       background-color: $color-dark;
+      @include sp {
+        display: none;
+      }
     }
   }
   &__plan {
     width: 50%;
-    margin: 160px auto;
+    margin: 16rem auto;
     font-size: 1.4rem;
+    @include sp {
+      width: 100%;
+      margin: 5rem 0;
+      font-size: 1rem;
+    }
     &__border {
       border-bottom: 1px solid $color-gray;
       padding: 0.8rem 0;
@@ -125,6 +140,10 @@
   display: grid;
   grid-template-columns: 50% 50%;
   position: relative;
+  @include sp {
+    display: block;
+  }
+
   &__ttl {
     position: absolute;
     top: -7rem;
