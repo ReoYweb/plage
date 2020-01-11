@@ -1,4 +1,7 @@
 .grovalnav {
+  @include sp {
+    display: none;
+  }
   ul {
     display: flex;
     flex-flow: row;

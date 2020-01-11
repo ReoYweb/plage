@@ -1,6 +1,8 @@
 .footer {
-  width: 80%;
-  margin: 20rem auto;
+  width: 100%;
+  padding: 20rem 0;
+  position: relative;
+  padding-left: 10%;
   .grovalnav {
     margin-top: 5rem;
     ul {
@@ -11,5 +13,13 @@
         }
       }
     }
+  }
+  .googlemaps {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    // padding-right: 20%;
   }
 }

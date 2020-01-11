@@ -40,23 +40,23 @@ $(function() {
 
 //parallax
 
-window.addEventListener('scroll', e => {
-  let scrolled = window.pageYOffset;
-  const background = document.querySelector('.parallax');
-  background.style.top = -(scrolled * 0.2) + 'px';
-});
+// window.addEventListener('scroll', e => {
+//   let scrolled = window.pageYOffset;
+//   const background = document.querySelector('.parallax');
+//   background.style.top = -(scrolled * 0.2) + 'px';
+// });
 
-window.addEventListener('scroll', e => {
-  let scrolled = window.pageYOffset;
-  const background = document.querySelector('.parallax2');
-  background.style.top = -(scrolled * 0.17) + 'px';
-});
+// window.addEventListener('scroll', e => {
+//   let scrolled = window.pageYOffset;
+//   const background = document.querySelector('.parallax2');
+//   background.style.top = -(scrolled * 0.17) + 'px';
+// });
 
-window.addEventListener('scroll', e => {
-  let scrolled = window.pageYOffset;
-  const background = document.querySelector('.parallax3');
-  background.style.top = -(scrolled * 0.1) + 'px';
-});
+// window.addEventListener('scroll', e => {
+//   let scrolled = window.pageYOffset;
+//   const background = document.querySelector('.parallax3');
+//   background.style.top = -(scrolled * 0.1) + 'px';
+// });
 
 jQuery(function($) {
   var ua = navigator.userAgent.toLowerCase();
