@@ -1,6 +1,9 @@
 .about {
   position: relative;
   margin-bottom: 20rem;
+  @include sp {
+    margin-bottom: 15rem;
+  }
   &__pic01 {
     width: 28%;
     position: absolute;
@@ -143,7 +146,6 @@
   @include sp {
     display: block;
   }
-
   &__ttl {
     position: absolute;
     top: -7rem;
@@ -158,6 +160,14 @@
     text-align: center;
     padding: 4.5rem 0 0 0;
     z-index: 2;
+    @include sp {
+      width: 5rem;
+      height: 5rem;
+      top: -2rem;
+      left: -2rem;
+      font-size: 1rem;
+      padding: 1.6rem 0 0 0;
+    }
   }
   img {
     width: 100%;
@@ -178,6 +188,9 @@
       position: absolute;
       bottom: 0;
       left: 2%;
+      @include sp {
+        font-size: 3rem;
+      }
     }
   }
 }
