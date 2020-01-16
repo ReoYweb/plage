@@ -58,6 +58,11 @@ $(function() {
 //   background.style.top = -(scrolled * 0.1) + 'px';
 // });
 
+$('.menu').on('click', function() {
+  $('.menu__line').toggleClass('active');
+  $('.gnav').fadeToggle();
+});
+
 jQuery(function($) {
   var ua = navigator.userAgent.toLowerCase();
 
