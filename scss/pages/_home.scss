@@ -200,21 +200,36 @@
   background-color: $color-gray;
   padding: 20rem 0;
   margin: 20rem 0 0 0;
+  @include sp {
+    margin: 10rem 0 0 0;
+    padding: 10rem 0;
+  }
   &__info {
     width: 80%;
     height: 40rem;
     margin: 0 auto;
     background-color: $color-white;
+    @include sp {
+      height: auto;
+    }
     &__text {
       border-right: 1px solid $color-gray;
       text-align: center;
       width: 40%;
       height: inherit;
       float: left;
+      @include sp {
+        width: 100%;
+        float: none;
+        border-bottom: 1px solid $color-gray;
+        height: auto;
+        height: 30rem;
+      }
       h2 {
         font-size: 5.2rem;
         font-family: 'Caveat', cursive;
         padding-top: 30%;
+        padding-top: 15%;
       }
       span {
         display: block;
@@ -232,9 +247,19 @@
       text-align: center;
       padding-top: 8rem;
       border-bottom: 1px solid $color-gray;
+      background-color: $color-white;
+      @include sp {
+        width: 100%;
+        float: none;
+        display: block;
+        height: 30rem;
+      }
       p {
         font-size: 5rem;
         font-weight: bold;
+        @include sp {
+          font-size: 3rem;
+        }
       }
       span {
         display: block;
@@ -247,6 +272,9 @@
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
+      @include sp {
+        width: 100%;
+      }
       a {
         width: 50%;
         height: 100%;
@@ -262,9 +290,16 @@
           font-size: 5rem;
           text-decoration: none;
           margin-top: 3rem;
+          @include sp {
+            font-size: 3rem;
+            margin-top: 1rem;
+          }
         }
         p {
           font-size: 1.2rem;
+          @include sp {
+            margin-bottom: 1rem;
+          }
         }
       }
     }
