@@ -1,0 +1,120 @@
+.allmenu {
+  width: 100%;
+  margin-top: -5%;
+  position: relative;
+  display: block;
+  margin-bottom: 10rem;
+  @include sp {
+    margin-bottom: 5rem;
+  }
+}
+
+.rectangle {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 250px;
+  margin-top: -2%;
+  background-color: $color-pink;
+  @include sp {
+    height: 100px;
+    margin-top: -5%;
+  }
+}
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  padding-bottom: 40px;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+  width: calc(100% / 4);
+  height: 50px;
+  border-bottom: 3px solid $color-pink;
+  background-color: $color-gray;
+  line-height: 50px;
+  font-size: 1.6rem;
+  text-align: center;
+  color: $color-black;
+  display: block;
+  float: left;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  @include sp {
+    font-size: 1.4rem;
+  }
+}
+
+/*ラジオボタンを全て消す*/
+input[name='tab_item'] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+  @include sp {
+    padding: 0 0 0 0;
+  }
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+#nail:checked ~ #nail_content,
+#hiar:checked ~ #hiar_content,
+#dress:checked ~ #dress_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: $color-pink;
+  color: #fff;
+}
+
+.tab_content_description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  @include sp {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+
+.menu_price {
+  width: 46%;
+  @include sp {
+    width: 100%;
+  }
+  caption {
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    @include sp {
+      padding-top: 4rem;
+    }
+  }
+  td {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid $color-gray;
+    @include sp {
+      font-size: 1.2rem;
+    }
+  }
+  .price__fix {
+    letter-spacing: 0.5rem;
+    text-align: right;
+  }
+}

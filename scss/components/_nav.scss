@@ -8,7 +8,7 @@
     padding: 0 0 0 4rem;
     li {
       font-size: 1.4rem;
-      margin: 0 2.5rem;
+      margin: 0 1.6rem;
       letter-spacing: 0.3rem;
       a {
         text-decoration: none;
@@ -41,7 +41,7 @@
   position: absolute;
   right: 20px;
   top: 20px;
-  width: 30px;
+  width: 40px;
   z-index: 99;
   display: none;
   @include sp {
@@ -51,7 +51,7 @@
 .menu__line {
   background: $color-pink;
   display: block;
-  height: 2px;
+  height: 1px;
   position: absolute;
   transition: transform 0.3s;
   width: 100%;
@@ -87,23 +87,28 @@
   z-index: 98;
 }
 .gnav__wrap {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20%;
 }
+.gnav__menu {
+  height: 100%;
+}
+
 .gnav__menu__item {
-  margin: 40px 0;
+  width: 100%;
+  text-align: center;
+  border: 1px solid $color-white;
+  margin-bottom: 5px;
 }
 .gnav__menu__item a {
   color: #fff;
   font-size: 2em;
-  font-weight: bold;
-  padding: 40px;
+  padding: 2rem;
   text-decoration: none;
+  text-align: center;
   transition: 0.5s;
+  display: block;
 }
 .gnav__menu__item a:hover {
   color: #666;

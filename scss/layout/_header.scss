@@ -6,6 +6,7 @@
   grid-template-columns: 10% 60% 15% 15%;
   align-items: center;
   z-index: 99999;
+
   @include sp {
     display: block;
     height: 60px;

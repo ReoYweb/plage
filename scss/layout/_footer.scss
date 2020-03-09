@@ -8,11 +8,29 @@
   &__area1 {
     width: 60%;
     padding-left: 10%;
-    padding-top: 12%;
+    padding-top: 10%;
     @include sp {
-      padding-left: 5%;
+      padding-left: 0%;
+      width: 100%;
       padding-top: 10%;
       height: 30rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1.5rem;
+      padding-top: 5rem;
+      @include sp {
+        padding-top: 3rem;
+        font-size: 1.3rem;
+      }
+      .fa-phone {
+        margin-right: 5px;
+        font-size: 1.3rem;
+      }
+      .fa-map-marker-alt {
+        margin-right: 5px;
+        font-size: 1.3rem;
+      }
     }
     .grovalnav {
       margin-top: 5rem;

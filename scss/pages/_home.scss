@@ -143,6 +143,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   position: relative;
+  margin-bottom: 20rem;
   @include sp {
     display: block;
   }
@@ -199,7 +200,6 @@
   width: 100%;
   background-color: $color-gray;
   padding: 20rem 0;
-  margin: 20rem 0 0 0;
   @include sp {
     margin: 10rem 0 0 0;
     padding: 10rem 0;
@@ -274,29 +274,27 @@
       align-items: center;
       @include sp {
         width: 100%;
+        display: block;
+        text-align: center;
       }
-      a {
+      div {
         width: 50%;
         height: 100%;
         display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        cursor: pointer;
         text-decoration: none;
         color: $color-black;
+        @include sp {
+          width: 100%;
+        }
         &:first-child {
           border-right: 1px solid $color-gray;
         }
-        i {
-          font-size: 5rem;
-          text-decoration: none;
-          margin-top: 3rem;
-          @include sp {
-            font-size: 3rem;
-            margin-top: 1rem;
-          }
-        }
         p {
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           @include sp {
             margin-bottom: 1rem;
           }

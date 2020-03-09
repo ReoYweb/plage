@@ -1,6 +1,17 @@
 .outer {
   margin: 20rem 0 0 0;
   padding: 0 10%;
+  @include sp {
+    padding: 0 5%;
+  }
+}
+
+.underouter {
+  padding: 0 10%;
+  position: relative;
+  @include sp {
+    padding: 0 5%;
+  }
 }
 
 .ttl01 {
