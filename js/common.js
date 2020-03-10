@@ -54,9 +54,10 @@ $(function() {
 
 $('.menu').on('click', function() {
   $('.menu__line').toggleClass('active');
-  $('.gnav')
-    .stop(true)
-    .animate({ width: 'toggle' });
+  $('.gnav').fadeToggle();
+  // .stop(true)
+  // .fadeSlide();
+  // .animate({ width: 'toggle' });
 });
 
 jQuery(function($) {
