@@ -56,7 +56,7 @@ $('.menu').on('click', function() {
   $('.menu__line').toggleClass('active');
   $('.gnav')
     .stop(true)
-    .animate({ width: 'toggle' });
+    .animate({ hight: 'toggle' });
 });
 
 jQuery(function($) {
