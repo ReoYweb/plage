@@ -69,7 +69,7 @@ ul { list-style-type: none; }
 .gnav__menu__item a:hover { color: #666; }
 
 .header { height: auto; width: 100%; position: fixed; display: grid; grid-template-columns: 10% 60% 15% 15%; align-items: center; z-index: 99999; }
-@media (max-width: 559px) { .header { display: block; height: 60px; background-color: #ffffff; } }
+@media (max-width: 559px) { .header { display: block; height: 60px; } }
 .header__logo { padding: 0 0 1rem 3rem; padding-top: 1.6rem; float: left; }
 @media (max-width: 559px) { .header__logo { position: fixed; } }
 .header__logo img { width: 100%; max-width: 100px; }
@@ -91,18 +91,10 @@ ul { list-style-type: none; }
 @media (max-width: 559px) { .hero { grid-template-columns: 50% 50%; } }
 .hero__left { position: relative; }
 .hero__left__logo { width: 40%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; }
-@media (max-width: 559px) { .hero__left__logo { right: 0%; z-index: 100; width: 60%; } }
+@media (max-width: 559px) { .hero__left__logo { left: 40%; z-index: 100; width: 120%; } }
+@media (max-width: 559px) { .hero__left h2 { position: absolute; bottom: 0; display: block; text-align: center; font-size: 1.2rem; font-weight: bold; line-height: 2; width: 200%; z-index: 100; padding: 10px 15%; } }
 .hero__left__text { position: absolute; top: 30%; left: 3%; writing-mode: vertical-rl; color: #bababa; font-size: 0.7rem; letter-spacing: 0.1rem; }
 @media (max-width: 559px) { .hero__left__text { font-size: 0.3rem; } }
-.hero__left__news { position: absolute; bottom: 10%; left: 30%; display: grid; grid-template-columns: 1fr 2fr; }
-@media (max-width: 559px) { .hero__left__news { width: 175%; z-index: 100; left: 25%; bottom: 5%; display: block; } }
-.hero__left__news dl { border-bottom: 1px solid #bababa; align-self: flex-end; }
-@media (max-width: 559px) { .hero__left__news dl { border: none; margin: 1rem 0 0 0; } }
-.hero__left__news dl dt { font-size: 1.1rem; margin-right: 1.6rem; margin-bottom: 0.8rem; }
-@media (max-width: 559px) { .hero__left__news dl dt { font-size: 0.8rem; } }
-.hero__left__news .textarea h2 { font-size: 3.5rem; font-weight: bold; }
-@media (max-width: 559px) { .hero__left__news .textarea h2 { font-size: 2rem; } }
-.hero__left__news .textarea::before { content: ''; display: inline-block; width: 70px; height: 70px; border-radius: 50%; background-color: #ffe8a6; color: #fff; text-align: center; line-height: 70px; margin-bottom: 6px; position: absolute; top: -5px; left: -25px; z-index: -1; }
 .hero__right img { width: 100%; }
 @media (max-width: 559px) { .hero__right img { width: 200% !important; margin-left: -50%; } }
 

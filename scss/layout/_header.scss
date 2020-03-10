@@ -6,11 +6,9 @@
   grid-template-columns: 10% 60% 15% 15%;
   align-items: center;
   z-index: 99999;
-
   @include sp {
     display: block;
     height: 60px;
-    background-color: $color-white;
   }
   &__logo {
     padding: 0 0 1rem 3rem;
