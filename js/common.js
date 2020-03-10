@@ -1,9 +1,3 @@
-// $('.hero__right').slick({
-//   autoplay: true,
-//   autoplaySpeed: 5000,
-//   dots: true
-// });
-
 var current, slides;
 
 current = 0;
@@ -60,7 +54,9 @@ $(function() {
 
 $('.menu').on('click', function() {
   $('.menu__line').toggleClass('active');
-  $('.gnav').fadeToggle();
+  $('.gnav')
+    .stop(true)
+    .animate({ width: 'toggle' });
 });
 
 jQuery(function($) {
