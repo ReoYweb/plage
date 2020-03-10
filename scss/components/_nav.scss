@@ -107,6 +107,35 @@
   border-bottom: 1px solid $color-gray;
   margin-bottom: 5px;
 }
+
+.gnav__menu__reserve {
+  border: 1px solid $color-gray;
+  width: 100%;
+  text-align: center;
+  margin-top: 1.4rem;
+  a {
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+    display: block;
+    i {
+      display: block;
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+      display: inline-block;
+      letter-spacing: 3px;
+      span {
+        font-size: 1.4rem;
+        display: block;
+      }
+    }
+  }
+}
+
 .gnav__menu__item a {
   color: #fff;
   padding: 1rem;

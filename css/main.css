@@ -64,6 +64,12 @@ ul { list-style-type: none; }
 
 .gnav__menu__item { width: 100%; text-align: left; border-bottom: 1px solid #f1f1f1; margin-bottom: 5px; }
 
+.gnav__menu__reserve { border: 1px solid #f1f1f1; width: 100%; text-align: center; margin-top: 1.4rem; }
+.gnav__menu__reserve a { color: #fff; padding: 1rem; text-decoration: none; text-align: center; transition: 0.5s; display: block; }
+.gnav__menu__reserve a i { display: block; font-size: 1.5rem; }
+.gnav__menu__reserve a p { font-size: 1.5rem; display: inline-block; letter-spacing: 3px; }
+.gnav__menu__reserve a p span { font-size: 1.4rem; display: block; }
+
 .gnav__menu__item a { color: #fff; padding: 1rem; text-decoration: none; text-align: left; transition: 0.5s; display: block; }
 .gnav__menu__item a p { font-size: 1.5rem; display: inline-block; }
 .gnav__menu__item a p span { font-size: 1rem; padding-left: 10px; display: inline-block; justify-content: center; }
