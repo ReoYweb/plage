@@ -17,7 +17,7 @@ $(function() {
   // 一旦hide()で隠してフェードインさせる
   $('body')
     .hide()
-    .delay(400)
+    .delay(500)
     .fadeIn('3000');
 });
 

@@ -69,7 +69,7 @@ ul { list-style-type: none; }
 .gnav__menu__item a:hover { color: #666; }
 
 .header { height: auto; width: 100%; position: fixed; display: grid; grid-template-columns: 10% 60% 15% 15%; align-items: center; z-index: 99999; }
-@media (max-width: 559px) { .header { display: block; height: 60px; } }
+@media (max-width: 559px) { .header { display: block; height: 60px; background-color: #ffffff; } }
 .header__logo { padding: 0 0 1rem 3rem; padding-top: 1.6rem; float: left; }
 @media (max-width: 559px) { .header__logo { position: fixed; } }
 .header__logo img { width: 100%; max-width: 100px; }
@@ -212,7 +212,7 @@ ul { list-style-type: none; }
 .contact__info__email div p { font-size: 1.5rem; }
 @media (max-width: 559px) { .contact__info__email div p { margin-bottom: 1rem; } }
 
-.allmenu { width: 100%; margin-top: -5%; position: relative; display: block; margin-bottom: 10rem; }
+.allmenu { width: 100%; margin-top: -5%; position: relative; display: block; margin-bottom: 10rem; z-index: -1; }
 @media (max-width: 559px) { .allmenu { margin-bottom: 5rem; } }
 
 .rectangle { display: block; position: absolute; top: 0; left: 0; width: 5px; height: 250px; margin-top: -2%; background-color: #bf476d; }

@@ -4,6 +4,7 @@
   position: relative;
   display: block;
   margin-bottom: 10rem;
+  z-index: -1;
   @include sp {
     margin-bottom: 5rem;
   }
