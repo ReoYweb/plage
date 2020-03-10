@@ -259,6 +259,7 @@ input[name='tab_item'] { display: none; }
 .aboutDes__salon img { width: 100%; }
 .aboutDes__salon h3 { font-size: 1.5rem; color: #343434; font-family: 'Caveat', cursive; font-weight: 700; letter-spacing: 0.2rem; margin: 2.4rem 0; text-align: center; }
 .aboutDes__salon p { padding: 0 4rem 2rem; font-size: 1.3rem; line-height: 2.3; }
+@media (max-width: 559px) { .aboutDes__salon p { padding: 0 2rem 2rem; } }
 
 .tab_content_description { display: flex; justify-content: space-between; margin-bottom: 5rem; }
 @media (max-width: 559px) { .tab_content_description { display: block; margin-bottom: 0; } }

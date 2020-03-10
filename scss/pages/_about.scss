@@ -38,6 +38,9 @@
       padding: 0 4rem 2rem;
       font-size: 1.3rem;
       line-height: 2.3;
+      @include sp {
+        padding: 0 2rem 2rem;
+      }
     }
   }
 }
