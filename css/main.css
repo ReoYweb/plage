@@ -114,7 +114,7 @@ ul { list-style-type: none; }
 @media (max-width: 559px) { .underhero__area { top: 45%; width: 90%; left: 5%; } }
 .underhero__area__title { font-size: 1.8rem; margin-bottom: 50px; letter-spacing: 2px; border: 1px solid #343434; border-radius: 100%; display: inline-block; width: 150px; height: 150px; text-align: center; display: flex; align-items: center; /* 縦方向中央揃え */ justify-content: center; /* 横方向中央揃え */ }
 @media (max-width: 559px) { .underhero__area__title { width: 100px; height: 100px; margin-bottom: 25px; } }
-.underhero__area__text { font-size: 1.5rem; margin-bottom: 2rem; }
+.underhero__area__text { font-size: 1.4rem; line-height: 1.8; margin-bottom: 2rem; }
 @media (max-width: 559px) { .underhero__area__text { font-size: 1.3rem; margin-bottom: 1.5rem; } }
 
 @keyframes zoomIn { 0% { transform: scale(1); }
@@ -144,10 +144,9 @@ ul { list-style-type: none; }
 @media (max-width: 559px) { .footer { width: 100%; flex-direction: column-reverse; } }
 .footer__area1 { width: 60%; padding-left: 10%; padding-top: 10%; }
 @media (max-width: 559px) { .footer__area1 { padding-left: 0%; width: 100%; padding-top: 10%; height: 30rem; text-align: center; } }
-.footer__area1 p { font-size: 1.5rem; padding-top: 5rem; }
-@media (max-width: 559px) { .footer__area1 p { padding-top: 3rem; font-size: 1.3rem; } }
-.footer__area1 p .fa-phone { margin-right: 5px; font-size: 1.3rem; }
-.footer__area1 p .fa-map-marker-alt { margin-right: 5px; font-size: 1.3rem; }
+.footer__area1 p { font-size: 1.1rem; padding-top: 5rem; }
+@media (max-width: 559px) { .footer__area1 p { padding-top: 3rem; font-size: 1.1rem; } }
+.footer__area1 p .fa-map-marker-alt { margin-right: 5px; font-size: 1.2rem; }
 .footer__area1 .grovalnav { margin-top: 5rem; }
 @media (max-width: 559px) { .footer__area1 .grovalnav { display: none; } }
 .footer__area1 .grovalnav ul { padding: 0; }
@@ -249,6 +248,17 @@ input[name='tab_item'] { display: none; }
 .menu_price td { font-size: 1.4rem; padding-bottom: 1rem; padding-top: 2rem; border-bottom: 1px solid #f1f1f1; }
 @media (max-width: 559px) { .menu_price td { font-size: 1.2rem; } }
 .menu_price .price__fix { letter-spacing: 0.5rem; text-align: right; }
+
+.aboutDes { width: 100%; display: flex; justify-content: space-between; }
+@media (max-width: 559px) { .aboutDes { display: block; } }
+.aboutDes:last-child { padding-bottom: 20rem; }
+@media (max-width: 559px) { .aboutDes:last-child { padding-bottom: 0rem; } }
+.aboutDes:first-child { margin-top: 10rem; }
+.aboutDes__salon { width: 48%; border: 1px solid #f1f1f1; padding-bottom: 4rem; margin-bottom: 5rem; }
+@media (max-width: 559px) { .aboutDes__salon { width: 100%; } }
+.aboutDes__salon img { width: 100%; }
+.aboutDes__salon h3 { font-size: 1.5rem; color: #343434; font-family: 'Caveat', cursive; font-weight: 700; letter-spacing: 0.2rem; margin: 2.4rem 0; text-align: center; }
+.aboutDes__salon p { padding: 0 4rem 2rem; font-size: 1.3rem; line-height: 2.3; }
 
 .tab_content_description { display: flex; justify-content: space-between; margin-bottom: 5rem; }
 @media (max-width: 559px) { .tab_content_description { display: block; margin-bottom: 0; } }
