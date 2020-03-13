@@ -1,3 +1,24 @@
+import barba from '@barba/core';
+import barbaCss from '@barba/css';//追記
+
+barba.use(barbaCss);//追記
+barba.init();
+
+let mask = document.querySelector(".mask");
+barba.init({
+	transitions: [{
+		async leave() {
+			mask.classList.add('is-close');
+			await new Promise((resolve) => {
+				return setTimeout(resolve, 1000);
+			});
+		},
+		afterEnter() {
+			mask.classList.remove('is-close');
+		}
+	}]
+});
+
 var current, slides;
 
 current = 0;
@@ -13,13 +34,13 @@ function fadeSlide() {
   slides[current].style.opacity = 1;
 }
 
-$(function() {
-  // 一旦hide()で隠してフェードインさせる
-  $('body')
-    .hide()
-    .delay(500)
-    .fadeIn('3000');
-});
+// $(function() {
+//   // 一旦hide()で隠してフェードインさせる
+//   $('body')
+//     .hide()
+//     .delay(500)
+//     .fadeIn('3000');
+// });
 
 $(function() {
   $(window).on('scroll', function() {

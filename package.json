@@ -2,7 +2,7 @@
   "name": "source",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpFile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,10 +18,8 @@
   },
   "homepage": "https://github.com/ReoYweb/Plage#readme",
   "devDependencies": {
+    "@barba/css": "^2.1.15",
     "gulp": "^4.0.2",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^4.0.2",
-    "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^8.0.0"
+    "gulp-sass": "^4.0.2"
   }
 }
