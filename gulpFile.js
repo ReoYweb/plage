@@ -31,7 +31,10 @@ const compileSass = () =>
 /**
  * Sassファイルを監視し、変更があったらSassを変換します
  */
-const watchSassFiles = () => watch("scss/main.scss", compileSass);
+const watchSassFiles = () => watch("./scss/**/*.scss", compileSass);
 
 // npx gulpというコマンドを実行した時、watchSassFilesが実行されるようにします
 exports.default = watchSassFiles;
+
+// 画像圧縮
+

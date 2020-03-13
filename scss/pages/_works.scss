@@ -1,0 +1,15 @@
+.photo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:  2rem; 
+    padding-bottom: 20rem;
+    margin-top: -5rem;
+    @include sp{
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 10rem;
+    }
+    img{
+        width: 100%;
+    }
+}
