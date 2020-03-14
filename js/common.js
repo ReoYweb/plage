@@ -15,14 +15,6 @@ function fadeSlide() {
   slides[current].style.opacity = 1;
 }
 
-// $(function() {
-//   // 一旦hide()で隠してフェードインさせる
-//   $('body')
-//     .hide()
-//     .delay(500)
-//     .fadeIn('3000');
-// });
-
 $(function() {
   $(window).on('scroll', function() {
     if ($(window).scrollTop() > 550) {
@@ -35,9 +27,16 @@ $(function() {
 });
 
 
-$(window).on('load', function(){
-  $('body').removeClass('fo');
+
+
+$('a:not([href^="#"]):not([target])').on('click', function(){
+  $('body').addClass('fo');
 });
+
+$(window).on('load', function(){
+  $('body').removeClass('fo2');
+});
+
 $(function() {
   $('a:not([href^="#"]):not([target])').on('click', function(e){
       e.preventDefault();
