@@ -1,23 +1,4 @@
-import barba from '@barba/core';
-import barbaCss from '@barba/css';//追記
 
-barba.use(barbaCss);//追記
-barba.init();
-
-let mask = document.querySelector(".mask");
-barba.init({
-	transitions: [{
-		async leave() {
-			mask.classList.add('is-close');
-			await new Promise((resolve) => {
-				return setTimeout(resolve, 1000);
-			});
-		},
-		afterEnter() {
-			mask.classList.remove('is-close');
-		}
-	}]
-});
 
 var current, slides;
 
@@ -53,6 +34,24 @@ $(function() {
   });
 });
 
+
+$(window).on('load', function(){
+  $('body').removeClass('fo');
+});
+$(function() {
+  $('a:not([href^="#"]):not([target])').on('click', function(e){
+      e.preventDefault();
+      url = $(this).attr('href');
+      if (url !== '') {
+          $('body').addClass('fadeout');
+          setTimeout(function(){
+              window.location = url;
+          }, 800);
+      }
+      return false;
+  });
+});
+
 //parallax
 
 // window.addEventListener('scroll', e => {
@@ -76,9 +75,6 @@ $(function() {
 $('.menu').on('click', function() {
   $('.menu__line').toggleClass('active');
   $('.gnav').fadeToggle();
-  // .stop(true)
-  // .fadeSlide();
-  // .animate({ width: 'toggle' });
 });
 
 jQuery(function($) {

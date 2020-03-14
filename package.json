@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ReoYweb/Plage#readme",
   "devDependencies": {
+    "@barba/core": "^2.9.7",
     "@barba/css": "^2.1.15",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2"
